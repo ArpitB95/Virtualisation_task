@@ -1,16 +1,17 @@
 ## Virtualisation task
 
-## Create a repo
-## create a provision.sh file and within that file write the script which automates the installing all dependencies
+- Create a repo
+- create a provision.sh file and within that file write the script which automates the installing all dependencies
 
-## Add instruction in vagrant file to run provision.sh file
+- Add instruction in vagrant file to run provision.sh file
 
 ## Steps:
 
-### Create a provision.sh file
+- Create a provision.sh file
 - Run 'nano provision.sh'
 - write script inside this file, which automates the tasks
-  '''
+  
+````  
   ## Automate download of dependencies
 
 ## update & upgrade
@@ -32,10 +33,13 @@ sudo apt-get install nodejs -y
 ## Install pm2
 
 sudo npm install pm2 -g
-```
+````
+
 
 - Now give instruction to vagrantfile to run provision.sh file
-```
+
+
+````
 Vagrant.configure("2") do |config|
 
  config.vm.box = "ubuntu/xenial64"
@@ -52,11 +56,15 @@ Vagrant.configure("2") do |config|
  config.vm.provision :shell, path: "provision.sh"
 
 end
-```
+````
+
 
 - Now, from your local system run'vagrant reload' ## which will reload the vagrantfile and send the instructions given
 
 - In your local system go to the folder, where test cases are written 
+
+
+<img width="428" alt="test env" src="https://user-images.githubusercontent.com/110182832/184685017-aa4a4a5b-3f54-4d4b-aabf-4a124b2d6b72.png">
 
 
 - To run test cases run 'rake spec'
@@ -70,6 +78,8 @@ end
 - again 'cd app'
 - run 'ls' , you'll find app.js file
 
+<img width="560" alt="ap js" src="https://user-images.githubusercontent.com/110182832/184685111-ced383ff-8ed0-4861-a892-97c6006e20dd.png">
+
 
 - From here run 
 - 'npm install'
@@ -77,3 +87,4 @@ end
 
 - You'll see the below outcome
 
+<img width="312" alt="working" src="https://user-images.githubusercontent.com/110182832/184685165-88a040cf-f6c5-427a-b45d-902f8d2d8a01.png">
