@@ -96,3 +96,23 @@ end
 - You'll see the below outcome
 
 <img width="312" alt="working" src="https://user-images.githubusercontent.com/110182832/184685165-88a040cf-f6c5-427a-b45d-902f8d2d8a01.png">
+
+
+## Linux variable & Env variable in Linux - windows -mac
+- How to check existing Env var 'env' or 'printenv'
+- How to create a variable in linux  'Name=Arpit'
+- How to check Linux variable  'echo $Nameofvariable'  ## here 'echo $Name'
+- Environment variable we have a keyword called 'export'   ## Ex: 'export Last_Name=Bhatt'
+- Check specific Env Var 'printenv Last_Name'  outcome would be Bhatt
+
+### How to make Env Variable 'PERSISTENT'
+- Research how to make env persistent of your 'first_name' , 'last_name' and
+- 'DB_HOST=mongodb://192.168.10.150:27017/posts'
+
+### To make env variable persistent follow theses steps:
+- sudo nano ~/.bashrc  ## enter .bashrc directory and add your variables and save it
+- Example:  'export variable_name=variable_value'  ## In this case it is 'export first_name=Arpit' , 'export last_name=Bhatt' and 
+  'export DB_HOST=mongodb://192.168.10.150:27017/posts'
+- save and exit .bashrc file
+- Do vagrant ssh
+-check if variable is permanently saved using 'echo $variable_name'
