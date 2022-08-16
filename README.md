@@ -114,5 +114,6 @@ end
 - Example:  'export variable_name=variable_value'  ## In this case it is 'export first_name=Arpit' , 'export last_name=Bhatt' and 
   'export DB_HOST=mongodb://192.168.10.150:27017/posts'
 - save and exit .bashrc file
+- run 'source .bashrc' to refresh
 - Do vagrant ssh
 -check if variable is permanently saved using 'echo $variable_name'
