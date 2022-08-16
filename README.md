@@ -117,3 +117,9 @@ end
 - run 'source .bashrc' to refresh
 - Do vagrant ssh
 -check if variable is permanently saved using 'echo $variable_name'
+
+
+### Two Virtual Machines
+
+<img width="551" alt="new final dia" src="https://user-images.githubusercontent.com/110182832/184918495-92a490b8-1cda-4576-a46b-c06e68b42864.png">
+
