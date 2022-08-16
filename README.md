@@ -1,3 +1,7 @@
+## What is monolithic architecture ?
+- Monolithic applications consist of a single codebase that interacts with a single database. The application’s client interface, single database, frontend, backend and business logic are incorporated into one codebase. There is only one test and deployment pipeline to maintain.
+
+
 ## Virtualisation task
 
 - Create a repo
