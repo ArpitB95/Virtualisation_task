@@ -2,6 +2,10 @@
 - Monolithic applications consist of a single codebase that interacts with a single database. The application’s client interface, single database, frontend, backend and business logic are incorporated into one codebase. There is only one test and deployment pipeline to maintain.
 
 
+![mon](https://user-images.githubusercontent.com/110182832/184827812-339ebf9f-60c8-4a85-a15d-5ebbec3284ea.png)
+
+
+
 ## Virtualisation task
 
 - Create a repo
