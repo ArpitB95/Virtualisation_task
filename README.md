@@ -145,7 +145,7 @@ end
 
 
 
-- ## Setting up Mongo DB
+ ## Setting up Mongo DB
 - Enter in VM db by 'vagrant ssh db'
 - Update & Upgrade 
 - 'sudo apt-get update-y'
