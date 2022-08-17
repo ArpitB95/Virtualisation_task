@@ -123,3 +123,21 @@ end
 
 <img width="551" alt="new final dia" src="https://user-images.githubusercontent.com/110182832/184918495-92a490b8-1cda-4576-a46b-c06e68b42864.png">
 
+
+
+## Linux variable & Env variable in Linux - windows -mac
+- How to check existing Env var 'env' or 'printenv'
+- How to create a variable in linux  'Name=Arpit'
+- How to check Linux variable  'echo $Nameofvariable'  ## here 'echo $Name'
+- Environment variable we have a keyword called 'export'   ## Ex: 'export Last_Name=Bhatt'
+- Check specific Env Var 'printenv Last_Name'  outcome would be Bhatt
+
+### How to make Env Variable 'PERSISTENT'
+- Research how to make env persistent of your 'first_name' , 'last_name' and
+- 'DB_HOST=mongodb://192.168.10.150:27017/posts'
+
+
+- To store variable permanently:
+- run 'sudo nano ~/.bashrc'
+- Inside bashrc file and add 'DB_HOST=mongodb://192.168.10.150:27017/posts'
+- save and exit
