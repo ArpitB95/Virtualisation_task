@@ -141,3 +141,57 @@ end
 - run 'sudo nano ~/.bashrc'
 - Inside bashrc file and add 'DB_HOST=mongodb://192.168.10.150:27017/posts'
 - save and exit
+
+
+
+
+- ## Setting up Mongo DB
+- Enter in VM db by 'vagrant ssh db'
+- Update & Upgrade 
+- 'sudo apt-get update-y'
+- 'sudo apt-get upgrade -y'
+
+- Now, run following commands
+- 'sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA312927'
+
+- echo "deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list'
+
+- 'sudo apt-get update-y'
+- 'sudo apt-get upgrade -y'
+
+-'sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20'
+
+- sudo systemctl enable mongod'
+- 'sudo systemctl restart mongod'
+
+- Check status by following command
+- 'sudo systemctl status mongod'
+
+- <img width="487" alt="enable" src="https://user-images.githubusercontent.com/110182832/185186175-75a8c7df-f5fa-4a6d-a534-ff04027540b7.png">
+
+
+- Now go into /etc directory by 'cd /etc'
+- Now edit the config file by running 'sudo nano mongod.conf'
+
+- <img width="311" alt="nano config" src="https://user-images.githubusercontent.com/110182832/185186919-b9855058-391e-4640-8bc3-ec1d6ab98c2b.png">
+
+- Edit the config file :
+-  under network interface change bindIP to 0.0.0.0 ##which will allow all the requests 
+
+- <img width="220" alt="bindip" src="https://user-images.githubusercontent.com/110182832/185187360-d8f7e645-e0cd-41f8-b3bc-0035ea1bbe48.png">
+
+- Now save and exit the config file
+
+### Now enter in to app VM
+- 'vagrant ssh app'
+- create env variable DB_HOST=mongodb://192.168.10.150:27017/posts
+- To create a permanent variable go in to #/.bashrc file and create variable there using 'export DB_HOST=mongodb://192.168.10.150:27017/posts'
+- save and exit .bashrc file
+
+- Now check if it's been saved by running 'printenv DB_HOST'
+- If you see the variable then go to 'cd app' and 'cd app' and go where your app.js file is located
+- now run 'ls' and ypu'll see 'seeds' file , go into that file
+- 'cd seeds'
+
+- now run 'node seed.js'
+-now go back to the app/app and run 'npm start' 
