@@ -124,6 +124,10 @@ end
 <img width="551" alt="new final dia" src="https://user-images.githubusercontent.com/110182832/184918495-92a490b8-1cda-4576-a46b-c06e68b42864.png">
 
 
+<img width="275" alt="add" src="https://user-images.githubusercontent.com/110182832/185353095-184cbd3e-2dfc-4a4e-be74-964b2d4fa225.png">
+
+
+
 
 ## Linux variable & Env variable in Linux - windows -mac
 - How to check existing Env var 'env' or 'printenv'
